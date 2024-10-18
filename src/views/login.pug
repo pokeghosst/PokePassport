@@ -1,0 +1,17 @@
+html
+  head
+    title Login
+  body
+    h1 Login
+    form(method='post', action=`/interaction/${uid}/login`)
+      label(for='email') Email:
+      input(type='email', name='email', required)
+      br
+      label(for='password') Password:
+      input(type='password', name='password', required)
+      br
+      if error
+        p(style='color: red') #{error}
+      button(type='submit') Login
+    p
+      a(href='/register') Register
