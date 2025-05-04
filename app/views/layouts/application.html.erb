@@ -23,8 +23,19 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%= yield(:header) if content_for?(:header) %>
+    <main>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </main>
+  <footer><p>Copyright © 2025 Pokeghost</p>
+  <ul>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Use</a></li>
+  </ul>
+  </footer>
   </body>
 </html>

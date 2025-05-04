@@ -1,0 +1,10 @@
+<% content_for :header do %>
+  <header class="nav-header">
+    <h1>Poke!Cloud</h1>
+    <div class="nav-user-corner">
+      <p> <%= current_user.email %></p>
+      <%= link_to "Sign out", destroy_user_session_path %>
+    </div>
+  </header>
+<% end %>
+<%= render template: "layouts/application" %>

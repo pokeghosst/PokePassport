@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/lato-regular.woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("/lato-bold.woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("/lato-light.woff2");
+}
+
+@font-face {
+  font-family: 'Lovelace';
+  font-weight: 700;
+  src: url("/Lovelace-Bold.otf");
+}

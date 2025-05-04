@@ -1,1 +1,41 @@
-Dashboard
+<div class="dashboard">
+  <div class="card">
+    <table class="account-info">
+      <colgroup>
+        <col class="spec" />
+      </colgroup>
+      <colgroup>
+        <col class="content" />
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Email</td>
+        <td><%= current_user.email %></td>
+      </tr>
+      <tr>
+        <td>Display name</td>
+        <td><%= current_user.account.display_name %></td>
+      </tr>
+      <tr>
+        <td>Plan</td>
+        <td><%= current_user.plan.name %></td>
+      </tr>
+      <tr>
+        <td>Subscription status</td>
+        <td><%= current_user.account.status %></td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td class="storage-cell"><%= human_readable_bytes(current_user.account.storage_used) %> of <%= human_readable_bytes(current_user.plan.storage_limit) %> used <a href="#">Get more storage</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card account-actions">
+    <ul>
+      <li><a href="#">Manage account</a></li>
+      <li><a href="#">Switch plan</a></li>
+      <li><a href="#">Notifications</a></li>
+    </ul>
+  </div>
+</div>

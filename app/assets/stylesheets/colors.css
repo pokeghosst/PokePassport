@@ -1,0 +1,98 @@
+:root {
+  --white: white;
+  /* Primary Color Scale */
+  --primary-50: hsl(350, 73%, 95%);
+  --primary-100: hsl(350, 73%, 90%);
+  --primary-200: hsl(350, 73%, 80%);
+  --primary-300: hsl(350, 73%, 70%);
+  --primary-400: hsl(350, 73%, 50%);
+  --primary-500: hsl(350, 73%, 29%);
+  --primary-600: hsl(350, 73%, 24%);
+  --primary-700: hsl(350, 73%, 19%);
+  --primary-800: hsl(350, 73%, 14%);
+  --primary-900: hsl(350, 73%, 9%);
+
+  /* Complementary Color (Teal) */
+  --complementary-50: hsl(170, 73%, 95%);
+  --complementary-100: hsl(170, 73%, 90%);
+  --complementary-200: hsl(170, 73%, 80%);
+  --complementary-300: hsl(170, 73%, 70%);
+  --complementary-400: hsl(170, 73%, 50%);
+  --complementary-500: hsl(170, 73%, 29%);
+  --complementary-600: hsl(170, 73%, 24%);
+  --complementary-700: hsl(170, 73%, 19%);
+  --complementary-800: hsl(170, 73%, 14%);
+  --complementary-900: hsl(170, 73%, 9%);
+
+  /* Analogous Colors */
+  --analogous1-300: hsl(320, 73%, 70%);
+  --analogous1-500: hsl(320, 73%, 29%); /* Purple-red */
+  --analogous1-700: hsl(320, 73%, 19%);
+
+  --analogous2-300: hsl(20, 73%, 70%);
+  --analogous2-500: hsl(20, 73%, 29%); /* Orange-brown */
+  --analogous2-700: hsl(20, 73%, 19%);
+
+  /* Neutral Grays */
+  --gray-50: hsl(0, 0%, 98%);
+  --gray-100: hsl(0, 0%, 96%);
+  --gray-200: hsl(0, 0%, 90%);
+  --gray-300: hsl(0, 0%, 85%);
+  --gray-400: hsl(0, 0%, 78%);
+  --gray-500: hsl(0, 0%, 70%);
+  --gray-600: hsl(0, 0%, 60%);
+  --gray-700: hsl(0, 0%, 40%);
+  --gray-800: hsl(0, 0%, 20%);
+  --gray-900: hsl(0, 0%, 10%);
+
+  /* Semantic Colors */
+  --success-100: hsl(120, 73%, 90%);
+  --success-300: hsl(120, 73%, 70%);
+  --success-500: hsl(120, 73%, 29%);
+  --success-700: hsl(120, 73%, 19%);
+
+  --warning-100: hsl(40, 73%, 90%);
+  --warning-300: hsl(40, 73%, 70%);
+  --warning-500: hsl(40, 73%, 50%);
+  --warning-700: hsl(40, 73%, 30%);
+
+  --error-100: hsl(0, 73%, 90%);
+  --error-300: hsl(0, 73%, 70%);
+  --error-500: hsl(0, 73%, 45%);
+  --error-700: hsl(0, 73%, 25%);
+
+  --info-100: hsl(200, 73%, 90%);
+  --info-300: hsl(200, 73%, 70%);
+  --info-500: hsl(200, 73%, 40%);
+  --info-700: hsl(200, 73%, 20%);
+
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-700);
+  --text-tertiary: var(--gray-600);
+  --text-disabled: var(--gray-500);
+  --text-inverse: var(--white);
+
+  --background-default: var(--white);
+  --background-muted: var(--gray-100);
+  --background-subtle: var(--gray-200);
+
+  --border-light: var(--gray-100);
+  --border-default: var(--gray-200);
+  --border-strong: var(--gray-300);
+
+  --shadow-light: hsla(0, 0%, 78%, 0.2);
+  --shadow-default: hsla(0, 0%, 78%, 0.53);
+  --shadow-strong: hsla(0, 0%, 60%, 0.7);
+
+  --shadow-sm: 0 1px 2px 0 var(--shadow-light);
+  --shadow-md: 0 4px 6px -1px var(--shadow-default), 0 2px 4px -2px var(--shadow-light);
+  --shadow-lg: 0 10px 15px -3px var(--shadow-default), 0 4px 6px -4px var(--shadow-light);
+
+  --state-hover: hsla(0, 0%, 0%, 0.05);
+  --state-focus: hsla(350, 73%, 29%, 0.15);
+  --state-active: hsla(350, 73%, 29%, 0.3);
+  --state-selected: hsla(350, 73%, 29%, 0.2);
+  --state-disabled: var(--gray-300);
+
+  --accent: var(--primary-500)
+}
