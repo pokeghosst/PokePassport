@@ -146,3 +146,7 @@ main {
 a {
   color: var(--accent)
 }
+
+label {
+  display: inline-block;
+}

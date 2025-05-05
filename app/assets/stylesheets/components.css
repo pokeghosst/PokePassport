@@ -24,7 +24,12 @@ footer {
     }
 }
 
+.form-label {
+    margin-bottom: .5rem;
+}
+
 .form-control {
+    display: block;
     box-shadow: inset 3px 3px 7px -4px var(--shadow-default);
     border-color: var(--border-default);
     border-width: 1px;
@@ -36,6 +41,7 @@ footer {
     font-weight: 400;
     line-height: 1.5;
     appearance: none;
+    margin-bottom: 1rem;
 }
 
 .form-control:focus {
@@ -157,4 +163,10 @@ col.spec {
     align-items: start;
     gap: 1rem;
     grid-template-columns: 2fr 1fr;
+}
+
+.separator {
+    border-top: 1px solid var(--border-default);
+    outline: none;
+    margin: 1rem 0;
 }
