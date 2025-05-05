@@ -77,7 +77,7 @@
   --background-subtle: var(--gray-200);
 
   --border-light: var(--gray-100);
-  --border-default: var(--gray-200);
+  --borderColor-default: var(--gray-200);
   --border-strong: var(--gray-300);
 
   --shadow-light: hsla(0, 0%, 78%, 0.2);

@@ -26,20 +26,28 @@ footer {
 
 .form-label {
     margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.form-note {
+    min-height: 17px;
+    margin: 0.25rem 0 0.5rem;
+    font-size: 14px;
+    color: var(--text-secondary);
 }
 
 .form-control {
     display: block;
     box-shadow: inset 3px 3px 7px -4px var(--shadow-default);
-    border-color: var(--border-default);
+    border-color: var(--borderColor-default);
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
     resize: vertical;
-    padding: .375rem .75rem;
-    font-size: 1rem;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
-    line-height: 1.5;
     appearance: none;
     margin-bottom: 1rem;
 }
@@ -50,20 +58,37 @@ footer {
 }
 
 .btn {
-    font-size: 1rem;
     border: 1px solid;
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 5px 1rem;
     cursor: pointer;
+    font-size: 14px;
     text-align: center;
     transition-property: background-color, color;
     transition-duration: 0.3s;
+    text-decoration: none;
 }
 
 .btn--primary {
-    background-color: var(--primary-500);
+    background-color: var(--accent);
     color: var(--white);
-    border-width: 0;
+    border: 1px solid var(--accent);
+}
+
+.btn--primary:hover {
+    background-color: var(--white);
+    color: var(--accent);
+}
+
+.btn--secondary {
+    background-color: var(--white);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.btn--secondary:hover {
+    background-color: var(--accent);
+    color: var(--white);
 }
 
 .auth-form-container {
@@ -108,14 +133,14 @@ footer {
     break-inside: avoid;
     page-break-inside: avoid;
     padding: 1rem;
-    border: 1px solid var(--border-default);
+    border: 1px solid var(--borderColor-default);
     border-radius: 6px;
     margin-bottom: 0.5rem;
     box-shadow: var(--shadow-sm);
 }
 
 .nav-header {
-    border-bottom: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--borderColor-default);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -166,7 +191,21 @@ col.spec {
 }
 
 .separator {
-    border-top: 1px solid var(--border-default);
+    border-top: 1px solid var(--borderColor-default);
     outline: none;
     margin: 1rem 0;
+}
+
+.subhead {
+    border-bottom: var(--borderWidth-thin) solid var(--borderColor-default);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.subhead > h2 {
+    font-size: 1.5rem;
+}
+
+.subhead--spacious {
+    margin-top: 2rem;
 }

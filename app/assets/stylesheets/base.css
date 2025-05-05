@@ -126,6 +126,8 @@
   --container-lg: 1024px;
   --container-xl: 1280px;
   --container-2xl: 1536px;
+
+  --borderWidth-thin: 0.0625rem;
 }
 
 body {
